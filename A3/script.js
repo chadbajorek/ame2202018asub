@@ -44,17 +44,17 @@ var goToSlide = function(n, d)
 
   $(".slide:nth-of-type(" + n + ")").addClass("currentSlide");
   $(".currentSlide").animate({left: "0%"}, 500); 
-  var l = 0
-  while (l < n) {
-    $(".slide:nth-of-type(" + l + ")").addClass("slideLeft");
-    l++;
+  var z = 0
+  while (z < n) {
+    $(".slide:nth-of-type(" + z + ")").addClass("slideLeft");
+    z++;
   }
   $(".slideLeft").animate({left: "-100%"}, 500);
-  var r = 0
-  r = n + 1
-  while (r < (allImages.length + 1)) {
-    $(".slide:nth-of-type(" + r + ")").addClass("slideRight");
-    r++;
+  var x = 0
+  x = n + 1
+  while (x < (allImages.length + 1)) {
+    $(".slide:nth-of-type(" + x + ")").addClass("slideRight");
+    x++;
   }
   $(".slideRight").animate({left: "100%"}, 500); 
 
