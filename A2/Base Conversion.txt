@@ -56,6 +56,6 @@ Task 3
 list at least 4 CSS properties that use RGB or HEX colors as part of their values
 
 1. background color
-2. column rule color
-3. outline color
+2. border colors
+3. text colors
 4. text shadow
