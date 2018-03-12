@@ -43,9 +43,7 @@ var goToSlide = function(n, d)
   $(".slide").stop().removeClass("currentSlide").removeClass("slideLeft").removeClass("slideRight");
 
   $(".slide:nth-of-type(" + n + ")").addClass("currentSlide");
-  $(".currentSlide").animate({
-    left: "0px"
-  }, 500); 
+  $(".currentSlide").animate({left: "0%"}, 500); 
   var l = 0
   while (l < n) {
     $(".slide:nth-of-type(" + l + ")").addClass("slideLeft");
